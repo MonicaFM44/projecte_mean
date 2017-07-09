@@ -1,0 +1,44 @@
+.quote-list-component {
+    position: relative;
+
+    .quote-list {
+        margin-top: 2em;
+        max-width: 600px;
+        margin:auto;
+        li {
+            position: relative;
+            border-bottom: 1px solid cyan;
+            &:hover {
+                .action-buttons {
+                    opacity:1;
+                }
+            }
+        }
+    }
+
+    .quote {
+        text-align: center;
+        font-size: 1.1em;
+    }
+    .author {
+        text-align: right;
+        padding-right: 2em;
+    }
+
+    // .action-buttons {
+    //     .fullscreen;
+    //     .transition-all;
+    //     .text-center;
+    //     opacity:0;
+    //     background-color: rgba(133, 54, 76, 0.6);
+    //     >a {
+    //         vertical-align:middle;
+    //         color: rgba(133, 54, 76, 0.6);
+    //         display:inline-block;
+    //         width:3em;
+    //         height:3em;
+    //         border-radius: 50%;
+    //         background-color: white;
+    //     }
+    // }
+}

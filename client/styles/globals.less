@@ -1,0 +1,55 @@
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin:0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    &:hovver { 
+        opacity: 0.5;
+    }
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    li {
+        padding: 1em 0;
+    }
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px 5px;
+    min-height: 60px;
+    outline:none;
+}
+input, select {
+    width:100%;
+    border-radius: 5px;
+    padding: 10px 5px;
+    outline:none;
+    border: 1px solid grey;
+    box-shadow: none;
+}
+textarea, input, select {
+    &.ng-invalid.ng-touched.ng-dirty {
+        border-color: red;
+    }
+}
+
+label {
+    font-weight: bold;
+    line-height: 2.5;
+}

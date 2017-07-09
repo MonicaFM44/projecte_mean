@@ -1,0 +1,254 @@
+@keyframes spin {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(359deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hovver {
+  opacity: 0.5;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+ul li {
+  padding: 1em 0;
+}
+textarea {
+  width: 100%;
+  max-width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 10px 5px;
+  min-height: 60px;
+  outline: none;
+}
+input,
+select {
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 5px;
+  outline: none;
+  border: 1px solid grey;
+  box-shadow: none;
+}
+textarea.ng-invalid.ng-touched.ng-dirty,
+input.ng-invalid.ng-touched.ng-dirty,
+select.ng-invalid.ng-touched.ng-dirty {
+  border-color: red;
+}
+label {
+  font-weight: bold;
+  line-height: 2.5;
+}
+body,
+textarea {
+  font-family: 'Montserrat', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Zilla Slab', serif;
+}
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+.btn {
+  display: inline-block;
+  padding: 0.3em 1em;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.36);
+  border-radius: 4px;
+  font-size: 0.9em;
+  margin: 1em;
+}
+.btn > i,
+.btn > span {
+  vertical-align: middle;
+}
+.btn.inactive {
+  opacity: 0.3;
+  pointer-events: none;
+}
+.popup {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 10;
+  opacity: 0;
+  animation: fadeIn 0.5s forwards;
+}
+.popup .popup-body {
+  background-color: white;
+  margin: 4em auto;
+  padding: 1em 2em;
+  max-width: 700px;
+  max-height: 500px;
+  overflow: auto;
+  border-radius: 5px;
+}
+.popup .backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.container {
+  margin: auto;
+  max-width: 900px;
+}
+.fullscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.fullscreen-fixed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+.full-page-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-top: 5em;
+  opacity: 0.4;
+}
+.full-page-loader .material-icons {
+  font-size: 50px;
+  animation: spin 1s linear infinite;
+}
+.form-field {
+  margin: 1em 0;
+}
+.transition-all {
+  transition: all 0.3s;
+}
+.quote-list {
+  max-width: 600px;
+  margin: auto;
+}
+.quote-list li {
+  border-bottom: 1px solid cyan;
+}
+.quote {
+  text-align: center;
+  font-size: 1.1em;
+}
+.author {
+  text-align: right;
+  padding-right: 2em;
+  opacity: 0.8;
+}
+.app-navbar-component {
+  background-color: #85364c;
+  padding: 0.2em 2em;
+}
+.app-navbar-component a {
+  color: #FBFBFB;
+  display: inline-block;
+  padding: 0.3em 1em;
+  border-right: 1px solid gray;
+}
+.app-navbar-component a:last-child {
+  border: none;
+}
+.random-quote-component {
+  max-width: 700px;
+  margin: 2em auto;
+  text-align: center;
+}
+.random-quote-component .quote {
+  font-size: 40px;
+  font-weight: bold;
+  margin-top: 2em;
+}
+.random-quote-component .material-icons {
+  font-size: 20px;
+}
+.category-list-component ul {
+  text-align: center;
+  width: 400px;
+  margin: auto;
+}
+.category-list-component ul li {
+  display: inline-block;
+  padding: 1em;
+}
+.category-detail-component .description {
+  opacity: 0.8;
+  font-style: italic;
+  margin-top: -1em;
+}
+.quote-list-component {
+  position: relative;
+}
+.quote-list-component .quote-list {
+  margin-top: 2em;
+  max-width: 600px;
+  margin: auto;
+}
+.quote-list-component .quote-list li {
+  position: relative;
+  border-bottom: 1px solid cyan;
+}
+.quote-list-component .quote-list li:hover .action-buttons {
+  opacity: 1;
+}
+.quote-list-component .quote {
+  text-align: center;
+  font-size: 1.1em;
+}
+.quote-list-component .author {
+  text-align: right;
+  padding-right: 2em;
+}
+.login-component.container {
+  max-width: 400px;
+}

@@ -7,10 +7,10 @@ Teniu fins diumenge per enviar-me el link al vostre repositori. Si agafeu aquest
 Aquestes son les funcionalitats que podeu escollir. Si teniu dubtes, envieu-me un mail i us donaré pistes de com fer-ho. Fixeu-vos que hi ha funcionalitats que depenen entre elles.
 
 ### Fàcils
-- Crear un model nou (movie o character) amb les seves pantalles de list i formularis de crear/editar (com el que hem fet amb quote).
-- Editar el formulari de quotes per a tenir en compte el model nou.
-- Posar validacions i missatges d'error al formulari de login.
-- Implementar el logout.
+- Crear un model nou (movie o character) amb les seves pantalles de list i formularis de crear/editar (com el que hem fet amb quote). OK
+- Editar el formulari de quotes per a tenir en compte el model nou. OK
+- Posar validacions i missatges d'error al formulari de login. OK
+- Implementar el logout. OK
 - Fer pantalla i formulari de sign in.
 
 ### Mitjanes
